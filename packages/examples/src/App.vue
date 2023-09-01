@@ -1,0 +1,12 @@
+<script setup lang="ts">
+import { Button, Card } from '@wing/components';
+</script>
+
+<template>
+  <!-- 这里是因为直接引入的就是Button 组件 -->
+  <Button />
+  <!-- 因为这里是通过component注册的，所以在全局挂载的情况下，应该使用注册时候的 name，也就是 WCard -->
+  <WCard />
+</template>
+
+<style scoped></style>
