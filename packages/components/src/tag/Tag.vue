@@ -2,19 +2,19 @@
 import { reactive, ref } from 'vue';
 
 defineOptions({
-  name: 'WCard',
+  name: 'WTag',
 });
 
 const count = ref(0);
 </script>
 
 <template>
-  <div class="g-red card">构的card</div>
+  <div class="tag">tag</div>
 </template>
 
 <style scoped lang="less">
-@import '../../styles/index';
-.card {
-  border: 1px solid #ddd;
+.tag {
+  background-color: azure;
+  padding: 4px 6px;
 }
 </style>

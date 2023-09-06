@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { Button, Card } from '@wing/components';
+import { ref } from 'vue';
+import { Button, Tag } from '@wing/components';
 </script>
 
 <template>
@@ -7,6 +8,7 @@ import { Button, Card } from '@wing/components';
   <Button />
   <!-- 因为这里是通过component注册的，所以在全局挂载的情况下，应该使用注册时候的 name，也就是 WCard -->
   <WCard />
+  <Tag />
 </template>
 
 <style scoped></style>

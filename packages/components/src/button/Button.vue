@@ -5,15 +5,19 @@ defineOptions({
   name: 'WButton',
 });
 
-const count = ref(0);
+const count = ref(2);
 </script>
 
 <template>
-  <button>测试按钮</button>
+  <button class="button">测试按钮 {{ count }}</button>
 </template>
 
-<style scoped>
-.read-the-docs {
-  color: #888;
+<style scoped lang="less">
+.button {
+  background-color: #4c90f0;
+  border: 1px solid #2d72d2;
+  padding: 6px 10px;
+  border-radius: 4px;
+  color: #fff;
 }
 </style>

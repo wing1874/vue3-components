@@ -3,27 +3,19 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "main": "index.ts",
+  "main": "./dist/my-lib.js",
   "files": ["dist"],
   "module": "./dist/my-lib.js",
   "exports": {
     ".": {
       "import": "./dist/my-lib.js",
       "require": "./dist/my-lib.umd.cjs"
+    },
+    "./dist/style.css": {
+      "import": "./dist/style.css"
     }
   },
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "vue": "^3.3.4"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^4.2.3",
-    "typescript": "^5.0.2",
-    "vite": "^4.4.5",
-    "vue-tsc": "^1.8.5"
+    "build": "vue-tsc && vite build"
   }
 }
