@@ -1,15 +1,20 @@
 <script setup lang="ts">
 import { ref } from 'vue';
+import { IProps } from './types';
 
 defineOptions({
   name: 'WButton',
+});
+const props = withDefaults(defineProps<IProps>(), {
+  name: 'button',
+  type: 'primary',
 });
 
 const count = ref(2);
 </script>
 
 <template>
-  <button class="button">测试按钮 {{ count }}</button>
+  <button class="button g-red">{{ name }}按钮 {{ type }}</button>
 </template>
 
 <style scoped lang="less">

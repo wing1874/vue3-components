@@ -6,7 +6,7 @@ import path from 'path';
 export default defineConfig({
   plugins: [vue()],
   // resolve: {
-  //   // 通过这个指向，解决热更新的问题
+  //   // 通过这个指向，解决开发模式下热更新的问题
   //   alias: {
   //     '@wing/components': path.join(__dirname, '..', 'components', 'index.ts'),
   //   },

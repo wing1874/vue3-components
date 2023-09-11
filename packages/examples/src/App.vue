@@ -5,7 +5,7 @@ import { Button, Tag } from '@wing/components';
 
 <template>
   <!-- 这里是因为直接引入的就是Button 组件 -->
-  <Button />
+  <Button type="warning" name="自定义" />
   <!-- 因为这里是通过component注册的，所以在全局挂载的情况下，应该使用注册时候的 name，也就是 WCard -->
   <WCard />
   <Tag />

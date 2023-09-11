@@ -3,13 +3,14 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "main": "./dist/my-lib.js",
-  "files": ["dist"],
-  "module": "./dist/my-lib.js",
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "typings": "./dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/my-lib.js",
-      "require": "./dist/my-lib.umd.cjs"
+      "import": "./dist/index.js"
     },
     "./dist/style.css": {
       "import": "./dist/style.css"
@@ -17,5 +18,8 @@
   },
   "scripts": {
     "build": "vue-tsc && vite build"
+  },
+  "devDependencies": {
+    "vite-plugin-dts": "^3.5.3"
   }
 }
