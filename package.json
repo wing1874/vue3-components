@@ -34,8 +34,7 @@
   },
   "lint-staged": {
     "**/*.{js,ts,vue}": [
-      "eslint --ext",
-      "prettier --parser=typescript --write"
+      "eslint --ext"
     ]
   }
 }

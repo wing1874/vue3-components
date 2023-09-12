@@ -24,5 +24,5 @@
       "@wing/components": ["components/src"],
     }
   },
-  "include": ["packages/components/src", "packages/examples/src"],
+  "include": ["packages/examples/src"],
 }

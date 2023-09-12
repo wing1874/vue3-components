@@ -10,11 +10,11 @@ const props = withDefaults(defineProps<IProps>(), {
   type: 'primary',
 });
 
-const count = ref(2);
+const count = ref(1);
 </script>
 
 <template>
-  <button class="button g-red">{{ name }}按钮 {{ type }}</button>
+  <button class="button g-red">{{ name }}按钮 12{{ type }}</button>
 </template>
 
 <style scoped lang="less">

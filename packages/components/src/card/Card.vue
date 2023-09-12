@@ -14,7 +14,7 @@ const count = ref(0);
 
 <template>
   <div :class="`card card-${size}`">
-    Card
+    Card1
     <h3>{{ title }}</h3>
   </div>
 </template>
